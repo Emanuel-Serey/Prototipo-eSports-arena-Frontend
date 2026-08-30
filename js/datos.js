@@ -2,36 +2,68 @@ const torneos = [
     {
         nombre: "Arena Masters",
         juego: "Valorant",
+        modalidad: "Por equipos",
+        integrantesPorEquipo: 5,
         estado: "Abierto",
         cupoMaximo: 16,
         inscritos: 10,
         cierreInscripcion: "2026-09-05"
     },
+
     {
         nombre: "Legends Cup",
         juego: "League of Legends",
-        estado: "Abierto",
-        cupoMaximo: 10,
-        inscritos: 6,
+        modalidad: "Por equipos",
+        integrantesPorEquipo: 5,
+        estado: "En curso",
+        cupoMaximo: 4,
+        inscritos: 4,
         cierreInscripcion: "2026-09-10"
     },
+
     {
         nombre: "Rocket Championship",
         juego: "Rocket League",
-        estado: "En curso",
+        modalidad: "Individual",
+        integrantesPorEquipo: 1,
+        estado: "Abierto",
         cupoMaximo: 12,
-        inscritos: 12,
-        cierreInscripcion: "2026-08-25"
+        inscritos: 8,
+        cierreInscripcion: "2026-09-25"
     }
 ];
+
+const equiposUsuario = [
+    {
+        nombre: "Shadow Wolves",
+        integrantes: 5,
+        sancionVigente: false
+    },
+    {
+        nombre: "Phoenix Squad",
+        integrantes: 4,
+        sancionVigente: false
+    }
+];
+
+const usuarioActual = {
+    id: 1,
+    nombre: "Juan Pérez",
+    apodo: "Pepito123",
+    sancionVigente: false
+};
+
+const inscripciones = [];
 
 const detalleTorneo = {
     nombre: "Legends Cup",
     juego: "League of Legends",
+    modalidad: "Por equipos",
     estado: "En curso",
     formato: "BO3",
-    cupoMaximo: 8,
-    inscritos: 8,
+    integrantesPorEquipo: 5,
+    cupoMaximo: 4,
+    inscritos: 4,
     cierreInscripcion: "2026-09-10",
 
     participantes: [
@@ -146,3 +178,4 @@ const detalleTorneo = {
         }
     ]
 };
+
