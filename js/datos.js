@@ -46,6 +46,11 @@ const equiposUsuario = [
     }
 ];
 
+const equiposExistentes = [
+    "Shadow Wolves",
+    "Phoenix Squad"
+];
+
 const usuarioActual = {
     id: 1,
     nombre: "Juan Pérez",
