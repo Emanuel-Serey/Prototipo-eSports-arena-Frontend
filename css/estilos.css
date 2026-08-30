@@ -136,3 +136,92 @@ footer {
     background-color: var(--color-acento);
     color: var(--color-fondo);
 }
+
+#lista-torneos-completa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#lista-partidas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta-partida {
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-primario);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.tarjeta-partida h3 {
+    color: var(--color-acento);
+    margin-top: 0;
+}
+
+#tabla-clasificacion table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabla-clasificacion th,
+#tabla-clasificacion td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-primario);
+}
+
+#tabla-clasificacion th {
+    color: var(--color-acento);
+}
+
+#lista-premios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta-premio {
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-primario);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.tarjeta-premio h3 {
+    color: var(--color-acento);
+    margin-top: 0;
+}
+
+.encabezado-partida {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado-partida div {
+    display: flex;
+    gap: 5px;
+}
+
+.encabezado-partida h3 {
+    color: var(--color-acento);
+    margin: 0;
+}
+
+.enfrentamiento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+    font-size: 18px;
+}
+
+.resultado {
+    color: var(--color-acento);
+    font-weight: bold;
+    font-size: 20px;
+}
