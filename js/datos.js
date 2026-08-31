@@ -55,7 +55,34 @@ const usuarioActual = {
     id: 1,
     nombre: "Juan Pérez",
     apodo: "Pepito123",
+    correo: "juan.perez@email.com",
     sancionVigente: false
+};
+
+const perfilJugador = {
+    equipos: [
+        "Nova Titans"
+    ],
+
+    historialTorneos: [
+        {
+            torneo: "Arena Masters",
+            juego: "Valorant",
+            resultado: "3° lugar"
+        },
+        {
+            torneo: "Legends Cup",
+            juego: "League of Legends",
+            resultado: "Participación"
+        }
+    ],
+
+    estadisticas: {
+        victorias: 12,
+        derrotas: 5
+    },
+
+    sanciones: []
 };
 
 const inscripciones = [];
