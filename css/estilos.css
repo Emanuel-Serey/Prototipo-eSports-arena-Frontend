@@ -73,6 +73,10 @@ footer {
     padding: 20px;
 }
 
+#imagen-destacada img {
+    width: 100%;
+}
+
 #lista-torneos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

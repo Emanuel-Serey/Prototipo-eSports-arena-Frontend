@@ -105,6 +105,13 @@ formularioApodo.addEventListener("submit", function (event) {
         return;
     }
 
+    if (apodo.length < 3 || apodo.length > 15) {
+
+        mensajeApodo.textContent =
+            "El apodo debe tener entre 3 y 15 caracteres.";
+
+        return;
+    }
 
     if (apodo.includes(" ")) {
 
