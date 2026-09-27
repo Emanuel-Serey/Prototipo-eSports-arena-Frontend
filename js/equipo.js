@@ -88,8 +88,6 @@ function mostrarIntegrantes() {
     });
 
 }
-
-
 // AGREGAR INTEGRANTE
 
 botonAgregar.addEventListener("click", function () {
@@ -135,8 +133,6 @@ botonAgregar.addEventListener("click", function () {
     mostrarIntegrantes();
 
 });
-
-
 // CREAR EQUIPO
 
 formularioEquipo.addEventListener("submit", function (event) {
@@ -200,7 +196,7 @@ formularioEquipo.addEventListener("submit", function (event) {
     }
 
 
-    // Si pasa todas las validaciones
+    // Si psa todas las validaciones
 
     equipoActual = {
         nombre: nombreEquipo,

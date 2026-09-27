@@ -42,7 +42,6 @@ perfilJugador.equipos.forEach(function (equipo) {
 
 });
 
-
 // HISTORIAL DE TORNEOS
 
 perfilJugador.historialTorneos.forEach(function (torneo) {
@@ -84,7 +83,6 @@ if (perfilJugador.sanciones.length === 0) {
     });
 
 }
-
 
 // CAMBIAR APODO
 

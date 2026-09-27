@@ -18,8 +18,6 @@ opcionEquipo.addEventListener("change", function () {
     campoEquipo.style.display = "block";
 });
 
-
-
 formularioInscripcion.addEventListener("submit", function (event) {
 
     event.preventDefault();
@@ -118,6 +116,12 @@ formularioInscripcion.addEventListener("submit", function (event) {
         const equipo = equiposUsuario.find(function (equipo) {
             return equipo.nombre === equipoSeleccionado;
         });
+
+        if (equipo.estado === "Inactivo") {
+            mensajeInscripcion.textContent =
+                "El equipo no puede inscribirse porque se encuentra inactivo.";
+            return;
+        }
 
         if (
             equipo.integrantes <

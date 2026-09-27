@@ -7,7 +7,7 @@ const torneos = [
         estado: "Abierto",
         cupoMaximo: 16,
         inscritos: 10,
-        cierreInscripcion: "2026-09-05"
+        cierreInscripcion: "2026-09-10"
     },
 
     {
@@ -37,12 +37,14 @@ const equiposUsuario = [
     {
         nombre: "Shadow Wolves",
         integrantes: 5,
-        sancionVigente: false
+        sancionVigente: false,
+        estado: "Activo"
     },
     {
         nombre: "Phoenix Squad",
         integrantes: 4,
-        sancionVigente: false
+        sancionVigente: false,
+        estado: "Inactivo"
     }
 ];
 

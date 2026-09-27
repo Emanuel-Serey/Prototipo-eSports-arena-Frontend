@@ -29,7 +29,6 @@ function mostrarTorneos(lista) {
 
 mostrarTorneos(torneos);
 
-
 formularioFiltros.addEventListener("submit", function (event) {
 
     event.preventDefault();
