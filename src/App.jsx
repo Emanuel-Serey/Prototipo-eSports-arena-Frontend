@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-
+import PanelAdmin from "./views/panel-admin.jsx";
+import PanelOrganizador from "./views/panel-organizador.jsx";
 import Cabecera from "./components/Cabecera.jsx";
 import PieDePagina from "./components/PieDePagina.jsx";
 
@@ -63,6 +64,24 @@ function App() {
                         element={
                             <RutaProtegida rolesPermitidos={["JUGADOR"]}>
                                 <Perfil />
+                            </RutaProtegida>
+                        }
+                    />
+
+                    <Route
+                        path="/admin"
+                        element={
+                            <RutaProtegida rolesPermitidos={["ADMIN"]}>
+                                <PanelAdmin />
+                            </RutaProtegida>
+                        }
+                    />
+
+                    <Route
+                        path="/organizador"
+                        element={
+                            <RutaProtegida rolesPermitidos={["ORGANIZADOR"]}>
+                                <PanelOrganizador />
                             </RutaProtegida>
                         }
                     />

@@ -125,6 +125,37 @@ function Cabecera() {
                                 </>
                             )}
 
+                            {/* ADMIN */}
+
+                            {autenticado && rol === "ADMIN" && (
+                                <li className="nav-item">
+
+                                    <NavLink
+                                        className="nav-link"
+                                        to="/admin"
+                                    >
+                                        Administración
+                                    </NavLink>
+
+                                </li>
+                            )}
+
+
+                            {/* ORGANIZADOR */}
+
+                            {autenticado && rol === "ORGANIZADOR" && (
+                                <li className="nav-item">
+
+                                    <NavLink
+                                        className="nav-link"
+                                        to="/organizador"
+                                    >
+                                        Organización
+                                    </NavLink>
+
+                                </li>
+                            )}
+
 
                             {/* VISITANTE */}
 

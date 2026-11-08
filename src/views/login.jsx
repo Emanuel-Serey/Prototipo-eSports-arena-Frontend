@@ -22,10 +22,19 @@ function Login() {
             const respuesta = await login(email, password);
 
             if (respuesta.rol === "JUGADOR") {
+
                 navigate("/perfil");
+
+            } else if (respuesta.rol === "ADMIN") {
+
+                navigate("/admin");
+
+            } else if (respuesta.rol === "ORGANIZADOR") {
+
+                navigate("/organizador");
+
             } else {
-                // Más adelante enviaremos ADMIN y ORGANIZADOR
-                // a sus respectivos paneles.
+
                 navigate("/");
             }
         } catch (error) {
