@@ -105,14 +105,12 @@ function Torneos() {
 
                 const coincideFechaInicio =
                     fechaInicio === "" ||
-                    torneo.cierreInscripcion >=
-                        fechaInicio;
+                    torneo.fechaInicio >= fechaInicio;
 
 
                 const coincideFechaFin =
                     fechaFin === "" ||
-                    torneo.cierreInscripcion <=
-                        fechaFin;
+                    torneo.fechaInicio <= fechaFin;
 
 
                 return (
